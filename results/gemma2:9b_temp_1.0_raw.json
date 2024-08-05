@@ -1,0 +1,161 @@
+```json
+[
+  {
+    "type": "Organization",
+    "text": "Hodder and Stoughton UK",
+    "start": 0,
+    "end": 17
+  },
+  {
+    "type": "Address",
+    "text": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+    "start": 18,
+    "end": 57
+  },
+  {
+    "type": "Organization",
+    "text": "United Agents",
+    "start": 62,
+    "end": 73
+  },
+  {
+    "type": "Address",
+    "text": "12-26 Lexington St, London W1F 0LE",
+    "start": 74,
+    "end": 95
+  },
+  {
+    "type": "Date",
+    "text": "12 July 2022",
+    "start": 96,
+    "end": 110
+  },
+  {
+    "type": "Money",
+    "text": "£439.82",
+    "start": 111,
+    "end": 122
+  },
+  {
+    "type": "Date",
+    "text": "10 August 2022",
+    "start": 124,
+    "end": 138
+  },
+  {
+    "type": "Money",
+    "text": "£519.69",
+    "start": 139,
+    "end": 150
+  },
+  {
+    "type": "Date",
+    "text": "5 October 2022",
+    "start": 152,
+    "end": 166
+  },
+  {
+    "type": "Money",
+    "text": "£1,771.82",
+    "start": 167,
+    "end": 180
+  },
+  {
+    "type": "Date",
+    "text": "14 March 2023",
+    "start": 182,
+    "end": 196
+  },
+  {
+    "type": "Money",
+    "text": "£673.11",
+    "start": 197,
+    "end": 208
+  },
+  {
+    "type": "Date",
+    "text": "5 April 2023",
+    "start": 210,
+    "end": 224
+  },
+  {
+    "type": "Money",
+    "text": "£2,590.85",
+    "start": 225,
+    "end": 237
+  },
+  {
+    "type": "Organization",
+    "text": "HarperCollins UK",
+    "start": 240,
+    "end": 257
+  },
+  {
+    "type": "Address",
+    "text": "1 London Bridge St, London SE1 9GF",
+    "start": 258,
+    "end": 285
+  },
+  {
+    "type": "Organization",
+    "text": "Rogers, Coleridge and White Ltd",
+    "start": 286,
+    "end": 310
+  },
+  {
+    "type": "Address",
+    "text": "20 Powis Mews, London W11 1JN",
+    "start": 311,
+    "end": 334
+  },
+  {
+    "type": "Date",
+    "text": "30 April 2022",
+    "start": 336,
+    "end": 350
+  },
+  {
+    "type": "Money",
+    "text": "£382.03",
+    "start": 351,
+    "end": 362
+  },
+  {
+    "type": "Date",
+    "text": "18 October 2022",
+    "start": 364,
+    "end": 378
+  },
+  {
+    "type": "Money",
+    "text": "£171.03",
+    "start": 379,
+    "end": 390
+  },
+  {
+    "type": "Date",
+    "text": "6 January 2023",
+    "start": 392,
+    "end": 406
+  },
+  {
+    "type": "Money",
+    "text": "£510,000",
+    "start": 407,
+    "end": 423
+  },
+  {
+    "type": "Date",
+    "text": "4 May 2023",
+    "start": 426,
+    "end": 440
+  },
+  {
+    "type": "Money",
+    "text": "£402.81",
+    "start": 441,
+    "end": 452
+  }
+]
+
+```

@@ -1,0 +1,26 @@
+```json
+[
+    {
+        "payer": "Hodder and Stoughton UK",
+        "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+        "via": "United Agents",
+        "via_address": "12-26 Lexington St, London W1F 0LE",
+        "date": ["12 July 2022", "10 August 2022", "5 October 2022", "14 March 2023", "5 April 2023"],
+        "amount_received": ["£439.82", "£519.69", "£1,771.82", "£673.11", "£2,590.85"],
+        "description": "royalties on book already written",
+        "hours": "no additional hours",
+        "registered_date": ["28 July 2022", "23 August 2022", "27 October 2022", "03 April 2023", "24 April 2023"]
+    },
+    {
+        "payer": "HarperCollins UK",
+        "address": "1 London Bridge St, London SE1 9GF",
+        "via": "Rogers, Coleridge and White Ltd",
+        "via_address": "20 Powis Mews, London W11 1JN",
+        "date": ["30 April 2022", "18 October 2022", "6 January 2023", "4 May 2023"],
+        "amount_received": ["£382.03", "£171.03", "£510,000", "£402.81"],
+        "description": ["royalties on books already written", "royalties on books already written", "an advance on an upcoming book yet to be published", "royalties on books already written"],
+        "hours": ["no additional hours", "no additional hours", "approx. 10 hrs to date", "no additional hours"],
+        "registered_date": ["27 May 2022", "27 October 2022", "12 January 2023", "16 May 2023"]
+    }
+]
+```

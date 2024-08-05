@@ -1,0 +1,114 @@
+{
+    "Entities": [
+        {
+            "Name": "Hodder and Stoughton UK",
+            "Type": "Organization",
+            "Address": {
+                "Street": "Carmelite House",
+                "City": "London",
+                "PostalCode": "EC4Y 0DZ",
+                "Country": "UK"
+            },
+            "PaymentDate": "12 July 2022",
+            "AmountPaid": "439.82 GBP",
+            "TypeOfPayment": "Royalties on book already written"
+        },
+        {
+            "Name": "United Agents",
+            "Type": "Organization",
+            "Address": {
+                "Street": "12-26 Lexington St",
+                "City": "London",
+                "PostalCode": "W1F 0LE",
+                "Country": "UK"
+            }
+        },
+        {
+            "Name": "Carmelite House",
+            "Type": "Location",
+            "Street": "50 Victoria Embankment",
+            "City": "London",
+            "PostalCode": "EC4Y 0DZ"
+        },
+        {
+            "Name": "12 July 2022",
+            "Type": "Date"
+        },
+        {
+            "Name": "10 August 2022",
+            "Type": "Date"
+        },
+        {
+            "Name": "5 October 2022",
+            "Type": "Date"
+        },
+        {
+            "Name": "14 March 2023",
+            "Type": "Date"
+        },
+        {
+            "Name": "5 April 2023",
+            "Type": "Date"
+        },
+        {
+            "Name": "HarperCollins UK",
+            "Type": "Organization",
+            "Address": {
+                "Street": "1 London Bridge St",
+                "City": "London",
+                "PostalCode": "SE1 9GF",
+                "Country": "UK"
+            },
+            "PaymentDate": "30 April 2022",
+            "AmountPaid": "382.03 GBP",
+            "TypeOfPayment": "Royalties on books already written"
+        },
+        {
+            "Name": "Rogers, Coleridge and White Ltd",
+            "Type": "Organization",
+            "Address": {
+                "Street": "20 Powis Mews",
+                "City": "London",
+                "PostalCode": "W11 1JN",
+                "Country": "UK"
+            }
+        },
+        {
+            "Name": "1 London Bridge St",
+            "Type": "Location",
+            "Street": "1",
+            "City": "London",
+            "PostalCode": "SE1 9GF"
+        },
+        {
+            "Name": "30 April 2022",
+            "Type": "Date"
+        },
+        {
+            "Name": "18 October 2022",
+            "Type": "Date"
+        },
+        {
+            "Name": "6 January 2023",
+            "Type": "Date"
+        },
+        {
+            "Name": "510,000 GBP",
+            "Type": "Amount",
+            "Currency": "GBP"
+        },
+        {
+            "Name": "Rogers, Coleridge and White Ltd",
+            "Type": "Organization",
+            "Address": {
+                "Street": "20 Powis Mews",
+                "City": "London",
+                "PostalCode": "W11 1JN",
+                "Country": "UK"
+            },
+            "PaymentDate": "4 May 2023",
+            "AmountPaid": "402.81 GBP",
+            "TypeOfPayment": "Royalties on books already written"
+        }
+    ]
+}

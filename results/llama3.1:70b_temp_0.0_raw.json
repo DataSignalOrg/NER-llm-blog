@@ -1,0 +1,62 @@
+Here is the JSON output of all entities extracted from the text:
+
+```json
+{
+  "entities": [
+    {
+      "name": "Hodder and Stoughton UK",
+      "type": "Organization"
+    },
+    {
+      "name": "Carmelite House",
+      "type": "Location"
+    },
+    {
+      "name": "50 Victoria Embankment",
+      "type": "Address"
+    },
+    {
+      "name": "London EC4Y 0DZ",
+      "type": "Postal Code"
+    },
+    {
+      "name": "United Agents",
+      "type": "Organization"
+    },
+    {
+      "name": "12-26 Lexington St",
+      "type": "Address"
+    },
+    {
+      "name": "London W1F 0LE",
+      "type": "Postal Code"
+    },
+    {
+      "name": "HarperCollins UK",
+      "type": "Organization"
+    },
+    {
+      "name": "1 London Bridge St",
+      "type": "Address"
+    },
+    {
+      "name": "London SE1 9GF",
+      "type": "Postal Code"
+    },
+    {
+      "name": "Rogers, Coleridge and White Ltd",
+      "type": "Organization"
+    },
+    {
+      "name": "20 Powis Mews",
+      "type": "Address"
+    },
+    {
+      "name": "London W11 1JN",
+      "type": "Postal Code"
+    }
+  ]
+}
+```
+
+Note that I've categorized the entities into types such as Organization, Location, Address, and Postal Code. Let me know if you'd like me to adjust these categories or extract any additional information!

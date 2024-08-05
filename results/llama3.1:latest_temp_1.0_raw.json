@@ -1,0 +1,102 @@
+Here is a JSON object containing the extracted entities:
+
+```
+{
+  "entities": [
+    {
+      "label": "organization",
+      "text": "Hodder and Stoughton UK"
+    },
+    {
+      "label": "address",
+      "text": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+    },
+    {
+      "label": "organization",
+      "text": "United Agents"
+    },
+    {
+      "label": "address",
+      "text": "12-26 Lexington St, London W1F 0LE"
+    },
+    {
+      "label": "date",
+      "text": "12 July 2022"
+    },
+    {
+      "label": "amount",
+      "text": "\u00a1439.82"
+    },
+    {
+      "label": "book",
+      "text": "book already written"
+    },
+    {
+      "label": "organization",
+      "text": "Rogers, Coleridge and White Ltd"
+    },
+    {
+      "label": "address",
+      "text": "20 Powis Mews, London W11 1JN"
+    },
+    {
+      "label": "date",
+      "text": "30 April 2022"
+    },
+    {
+      "label": "amount",
+      "text": "\u00a1382.03"
+    },
+    {
+      "label": "book",
+      "text": "books already written"
+    },
+    {
+      "label": "organization",
+      "text": "HarperCollins UK"
+    },
+    {
+      "label": "address",
+      "text": "1 London Bridge St, London SE1 9GF"
+    },
+    {
+      "label": "date",
+      "text": "18 October 2022"
+    },
+    {
+      "label": "amount",
+      "text": "\u00a171.03"
+    },
+    {
+      "label": "book",
+      "text": "books already written"
+    },
+    {
+      "label": "date",
+      "text": "6 January 2023"
+    },
+    {
+      "label": "amount",
+      "text": "\u00a2510,000"
+    },
+    {
+      "label": "book",
+      "text": "upcoming book yet to be published"
+    },
+    {
+      "label": "date",
+      "text": "4 May 2023"
+    },
+    {
+      "label": "amount",
+      "text": "\u00a1402.81"
+    },
+    {
+      "label": "book",
+      "text": "books already written"
+    }
+  ]
+}
+```
+
+Note that this output includes all entities found in the text, including addresses, dates, amounts, and book titles. You may want to filter or process this output further depending on your specific use case.

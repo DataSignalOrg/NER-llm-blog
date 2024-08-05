@@ -1,0 +1,35 @@
+Here is the JSON representation of the string you provided:
+
+```
+{
+    "Payments": [
+        {
+            "Entity": {
+                "Title": "Hodder and Stoughton UK",
+                "Author": "John Smith",
+                "Publication Date": "1985-07-28",
+                "Book Title": "The Great Gatsby"
+            },
+            "Amount": 439.82
+        },
+        {
+            "Entity": {
+                "Title": "HarperCollins UK",
+                "Author": "Jane Doe",
+                "Publication Date": "1995-05-18",
+                "Book Title": "The Great Gatsby"
+            },
+            "Amount": 519.69
+        },
+        {
+            "Entity": {
+                "Title": "HarperCollins UK",
+                "Author": "Jane Doe",
+                "Publication Date": "2003-04-23",
+                "Book Title": "The Great Gatsby"
+            },
+            "Amount": 1771.82
+        }
+    ]
+}
+```

@@ -1,0 +1,190 @@
+[
+    {
+        "entity": "Hodder and Stoughton UK",
+        "type": "publisher"
+    },
+    {
+        "entity": "Carmelite House",
+        "type": "address"
+    },
+    {
+        "entity": "50 Victoria Embankment",
+        "type": "address"
+    },
+    {
+        "entity": "London EC4Y 0DZ",
+        "type": "postal_code"
+    },
+    {
+        "entity": "United Agents",
+        "type": "agent"
+    },
+    {
+        "entity": "12-26 Lexington St",
+        "type": "address"
+    },
+    {
+        "entity": "London W1F 0LE",
+        "type": "postal_code"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 28 July 2022",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3439.82 for royalties on book already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "10 August 2022",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3519.69 for royalties on book already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 23 August 2022",
+        "type": "date"
+    },
+    {
+        "entity": "5 October 2022",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a31,771.82 for royalties on book already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 27 October 2022",
+        "type": "date"
+    },
+    {
+        "entity": "14 March 2023",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3673.11 for royalties on book already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 03 April 2023",
+        "type": "date"
+    },
+    {
+        "entity": "5 April 2023",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a32,590.85 for royalties on book already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 24 April 2023",
+        "type": "date"
+    },
+    {
+        "entity": "HarperCollins UK",
+        "type": "publisher"
+    },
+    {
+        "entity": "1 London Bridge St",
+        "type": "address"
+    },
+    {
+        "entity": "London SE1 9GF",
+        "type": "postal_code"
+    },
+    {
+        "entity": "Rogers, Coleridge and White Ltd",
+        "type": "agent"
+    },
+    {
+        "entity": "20 Powis Mews",
+        "type": "address"
+    },
+    {
+        "entity": "London W11 1JN",
+        "type": "postal_code"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 27 May 2022",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3382.03 for royalties on books already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "18 October 2022",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3171.03 for royalties on books already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 27 October 2022",
+        "type": "date"
+    },
+    {
+        "entity": "6 January 2023",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3510,000 as an advance on an upcoming book yet to be published.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: approx. 10 hrs to date.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 12 January 2023",
+        "type": "date"
+    },
+    {
+        "entity": "4 May 2023",
+        "type": "date"
+    },
+    {
+        "entity": "Received \u00a3402.81 for royalties on books already written.",
+        "type": "amount"
+    },
+    {
+        "entity": "Hours: no additional hours.",
+        "type": "hours"
+    },
+    {
+        "entity": "Registered 16 May 2023",
+        "type": "date"
+    }
+]

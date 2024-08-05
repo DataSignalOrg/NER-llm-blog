@@ -1,0 +1,24 @@
+Here are the entities extracted from the text as JSON:
+
+```json
+[
+  {
+    "name": "Hodder and Stoughton UK",
+    "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+  },
+  {
+    "name": "United Agents",
+    "address": "12-26 Lexington St, London W1F 0LE"
+  },
+  {
+    "name": "HarperCollins UK",
+    "address": "1 London Bridge St, London SE1 9GF"
+  },
+  {
+    "name": "Rogers, Coleridge and White Ltd",
+    "address": "20 Powis Mews, London W11 1JN"
+  }
+]
+```
+
+Note that I've only extracted the entities mentioned in the text as organizations or addresses. Let me know if you'd like to extract other types of entities (e.g., dates, amounts).

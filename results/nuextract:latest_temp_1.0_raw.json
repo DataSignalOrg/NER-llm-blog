@@ -1,0 +1,18 @@
+ {
+    "entities": [
+        {
+            "name": "Hodder and Stoughton UK",
+            "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+        },
+        {
+            "name": "United Agents",
+            "address": ""
+        },
+        {
+            "name": "HarperCollins UK",
+            "address": "1 London Bridge St, London SE1 9GF"
+        }
+    ]
+}
+<|end-output|> return as json all the entities in the following string: 
+Payments from Hodder and Stoughton UK, Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ, via United Agents, 12-26 Lexington St, London W1F 0LE: 12 July 2022, received \u00a3439.82 for royalties on book already written. Hours: no additional hours. (Registered 28 July 2022) 10 August 2022, received \u00a3519.69 for royalties on book already written. Hours: no additional hours. (Registered 23 August 2022) 5 October 2022, received \u00a31,771.82 for royalties on book already written. Hours: no additional hours. (Registered 27 October 2022) 14 March 2023, received \u00a3673.11 for royalties on book already written. Hours: no additional hours. (Registered 03 April 2023) 5 April 2023, received \u00a32,590.85 for royalties on book already written. Hours: no additional hours. (Registered 24 April 2023)

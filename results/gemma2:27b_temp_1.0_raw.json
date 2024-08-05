@@ -1,0 +1,112 @@
+```json
+[
+  {
+    "type": "PAYMENT",
+    "payer": "Hodder and Stoughton UK",
+    "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+    "agent": "United Agents",
+    "agent_address": "12-26 Lexington St, London W1F 0LE",
+    "date": "2022-07-12",
+    "amount": 439.82,
+    "description": "royalties on book already written",
+    "hours": "no additional hours",
+    "registration_date": "2022-07-28"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "Hodder and Stoughton UK",
+    "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+    "agent": "United Agents",
+    "agent_address": "12-26 Lexington St, London W1F 0LE",
+    "date": "2022-08-10",
+    "amount": 519.69,
+    "description": "royalties on book already written",
+    "hours": "no additional hours",
+    "registration_date": "2022-08-23"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "Hodder and Stoughton UK",
+    "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+    "agent": "United Agents",
+    "agent_address": "12-26 Lexington St, London W1F 0LE",
+    "date": "2022-10-05",
+    "amount": 1771.82,
+    "description": "royalties on book already written",
+    "hours": "no additional hours",
+    "registration_date": "2022-10-27"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "Hodder and Stoughton UK",
+    "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+    "agent": "United Agents",
+    "agent_address": "12-26 Lexington St, London W1F 0LE",
+    "date": "2023-03-14",
+    "amount": 673.11,
+    "description": "royalties on book already written",
+    "hours": "no additional hours",
+    "registration_date": "2023-04-03"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "Hodder and Stoughton UK",
+    "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
+    "agent": "United Agents",
+    "agent_address": "12-26 Lexington St, London W1F 0LE",
+    "date": "2023-04-05",
+    "amount": 2590.85,
+    "description": "royalties on book already written",
+    "hours": "no additional hours",
+    "registration_date": "2023-04-24"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "HarperCollins UK",
+    "address": "1 London Bridge St, London SE1 9GF",
+    "agent": "Rogers, Coleridge and White Ltd",
+    "agent_address": "20 Powis Mews, London W11 1JN",
+    "date": "2022-04-30",
+    "amount": 382.03,
+    "description": "royalties on books already written",
+    "hours": "no additional hours",
+    "registration_date": "2022-05-27"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "HarperCollins UK",
+    "address": "1 London Bridge St, London SE1 9GF",
+    "agent": "Rogers, Coleridge and White Ltd",
+    "agent_address": "20 Powis Mews, London W11 1JN",
+    "date": "2022-10-18",
+    "amount": 171.03,
+    "description": "royalties on books already written",
+    "hours": "no additional hours",
+    "registration_date": "2022-10-27"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "HarperCollins UK",
+    "address": "1 London Bridge St, London SE1 9GF",
+    "agent": "Rogers, Coleridge and White Ltd",
+    "agent_address": "20 Powis Mews, London W11 1JN",
+    "date": "2023-01-06",
+    "amount": 510000,
+    "description": "advance on an upcoming book yet to be published",
+    "hours": "approx. 10 hrs to date",
+    "registration_date": "2023-01-12"
+  },
+  {
+    "type": "PAYMENT",
+    "payer": "HarperCollins UK",
+    "address": "1 London Bridge St, London SE1 9GF",
+    "agent": "Rogers, Coleridge and White Ltd",
+    "agent_address": "20 Powis Mews, London W11 1JN",
+    "date": "2023-05-04",
+    "amount": 402.81,
+    "description": "royalties on books already written",
+    "hours": "no additional hours",
+    "registration_date": "2023-05-16"
+  }
+]
+```

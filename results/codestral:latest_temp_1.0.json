@@ -1,0 +1,24 @@
+{
+    "entities": [
+        {
+            "name": "Hodder and Stoughton UK",
+            "type": "Company",
+            "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+        },
+        {
+            "name": "United Agents",
+            "type": "Company",
+            "address": "12-26 Lexington St, London W1F 0LE"
+        },
+        {
+            "name": "HarperCollins UK",
+            "type": "Company",
+            "address": "1 London Bridge St, London SE1 9GF"
+        },
+        {
+            "name": "Rogers, Coleridge and White Ltd",
+            "type": "Company",
+            "address": "20 Powis Mews, London W11 1JN"
+        }
+    ]
+}

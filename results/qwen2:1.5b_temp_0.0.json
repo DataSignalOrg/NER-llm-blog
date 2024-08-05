@@ -1,0 +1,52 @@
+{
+    "Payments": [
+        {
+            "Entity": "Hodder and Stoughton UK",
+            "Location": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+        },
+        {
+            "Entity": "United Agents",
+            "Location": "12-26 Lexington St, London W1F 0LE"
+        },
+        {
+            "Entity": "HarperCollins UK",
+            "Location": "1 London Bridge St, London SE1 9GF"
+        }
+    ],
+    "Dates": [
+        {
+            "Date": "12 July 2022",
+            "Amount": "$439.82"
+        },
+        {
+            "Date": "10 August 2022",
+            "Amount": "$519.69"
+        },
+        {
+            "Date": "5 October 2022",
+            "Amount": "$1,771.82"
+        },
+        {
+            "Date": "14 March 2023",
+            "Amount": "$673.11"
+        },
+        {
+            "Date": "5 April 2023",
+            "Amount": "$2,590.85"
+        }
+    ],
+    "Book Titles": [
+        {
+            "Title": "Book Title 1",
+            "Received Amount": "$439.82"
+        },
+        {
+            "Title": "Book Title 2",
+            "Received Amount": "$519.69"
+        },
+        {
+            "Title": "Book Title 3",
+            "Received Amount": "$1,771.82"
+        }
+    ]
+}

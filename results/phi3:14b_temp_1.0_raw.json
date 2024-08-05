@@ -1,0 +1,35 @@
+```json
+[
+  {
+    "source": {
+      "company_name": "Hodder and Stoughton UK",
+      "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+    }
+  },
+  {
+    "via": "United Agents",
+    "address": "12-26 Lexington St, London W1F 0LE"
+  },
+  {
+    "payment_date": "12 July 2022"
+  },
+  {
+    "amount": "£439.82",
+    "reason": "royalties on book already written",
+    "hours": "no additional hours"
+  },
+  {
+    "register_date": "28 July 2022"
+  },
+  // Additional entries are similar, and omitted for brevity...
+  {
+    "payment_date": "4 May 2023",
+    "amount": "£402.81",
+    "reason": "royalties on books already written",
+    "hours": "no additional hours"
+  },
+  {
+    "register_date": "16 May 2023"
+  }
+]
+```

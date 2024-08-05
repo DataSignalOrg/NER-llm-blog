@@ -1,0 +1,106 @@
+Here is the JSON output with all the entities extracted from the text:
+
+```json
+{
+  "entities": [
+    {
+      "type": "Organization",
+      "name": "Hodder and Stoughton UK"
+    },
+    {
+      "type": "Location",
+      "name": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+    },
+    {
+      "type": "Organization",
+      "name": "United Agents"
+    },
+    {
+      "type": "Location",
+      "name": "12-26 Lexington St, London W1F 0LE"
+    },
+    {
+      "type": "Date",
+      "value": "12 July 2022"
+    },
+    {
+      "type": "Amount",
+      "value": "£439.82"
+    },
+    {
+      "type": "Date",
+      "value": "10 August 2022"
+    },
+    {
+      "type": "Amount",
+      "value": "£519.69"
+    },
+    {
+      "type": "Date",
+      "value": "5 October 2022"
+    },
+    {
+      "type": "Amount",
+      "value": "£1,771.82"
+    },
+    {
+      "type": "Date",
+      "value": "14 March 2023"
+    },
+    {
+      "type": "Amount",
+      "value": "£673.11"
+    },
+    {
+      "type": "Date",
+      "value": "5 April 2023"
+    },
+    {
+      "type": "Amount",
+      "value": "£2,590.85"
+    },
+    {
+      "type": "Organization",
+      "name": "HarperCollins UK"
+    },
+    {
+      "type": "Location",
+      "name": "1 London Bridge St, London SE1 9GF"
+    },
+    {
+      "type": "Organization",
+      "name": "Rogers, Coleridge and White Ltd"
+    },
+    {
+      "type": "Location",
+      "name": "20 Powis Mews, London W11 1JN"
+    },
+    {
+      "type": "Date",
+      "value": "30 April 2022"
+    },
+    {
+      "type": "Amount",
+      "value": "£382.03"
+    },
+    {
+      "type": "Date",
+      "value": "18 October 2022"
+    },
+    {
+      "type": "Amount",
+      "value": "£171.03"
+    },
+    {
+      "type": "Date",
+      "value": "6 January 2023"
+    },
+    {
+      "type": "Amount",
+      "value": "£510,000"
+    }
+  ]
+}
+```
+
+Note: The JSON output includes entities of type `Organization`, `Location`, `Date`, and `Amount`. Each entity has a `name` or `value` property that contains the corresponding text from the input string.

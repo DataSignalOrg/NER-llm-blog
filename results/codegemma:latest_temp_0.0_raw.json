@@ -1,0 +1,114 @@
+```json
+{
+  "entities": [
+    {
+      "name": "Hodder and Stoughton UK",
+      "type": "publisher"
+    },
+    {
+      "name": "Carmelite House",
+      "type": "address"
+    },
+    {
+      "name": "London EC4Y 0DZ",
+      "type": "postal_code"
+    },
+    {
+      "name": "United Agents",
+      "type": "agent"
+    },
+    {
+      "name": "12-26 Lexington St",
+      "type": "address"
+    },
+    {
+      "name": "London W1F 0LE",
+      "type": "postal_code"
+    },
+    {
+      "name": "12 July 2022",
+      "type": "date"
+    },
+    {
+      "name": "10 August 2022",
+      "type": "date"
+    },
+    {
+      "name": "5 October 2022",
+      "type": "date"
+    },
+    {
+      "name": "14 March 2023",
+      "type": "date"
+    },
+    {
+      "name": "5 April 2023",
+      "type": "date"
+    },
+    {
+      "name": "HarperCollins UK",
+      "type": "publisher"
+    },
+    {
+      "name": "1 London Bridge St",
+      "type": "address"
+    },
+    {
+      "name": "London SE1 9GF",
+      "type": "postal_code"
+    },
+    {
+      "name": "Rogers, Coleridge and White Ltd",
+      "type": "agent"
+    },
+    {
+      "name": "20 Powis Mews",
+      "type": "address"
+    },
+    {
+      "name": "London W11 1JN",
+      "type": "postal_code"
+    },
+    {
+      "name": "30 April 2022",
+      "type": "date"
+    },
+    {
+      "name": "18 October 2022",
+      "type": "date"
+    },
+    {
+      "name": "6 January 2023",
+      "type": "date"
+    },
+    {
+      "name": "4 May 2023",
+      "type": "date"
+    },
+    {
+      "name": "16 May 2023",
+      "type": "date"
+    },
+    {
+      "name": "Royalties",
+      "type": "payment_type"
+    },
+    {
+      "name": "Books",
+      "type": "product"
+    },
+    {
+      "name": "Advance",
+      "type": "payment_type"
+    },
+    {
+      "name": "Upcoming Book",
+      "type": "product"
+    },
+    {
+      "name": "Hours",
+      "type": "time"
+    }
+  ]
+}
+```

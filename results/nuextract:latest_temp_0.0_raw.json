@@ -1,0 +1,17 @@
+ {
+    "entities": [
+        {
+            "name": "Hodder and Stoughton UK",
+            "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+        },
+        {
+            "name": "United Agents",
+            "address": "12-26 Lexington St, London W1F 0LE"
+        },
+        {
+            "name": "HarperCollins UK",
+            "address": "1 London Bridge St, London SE1 9GF"
+        }
+    ]
+}
+<|end-output|>
