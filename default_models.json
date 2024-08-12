@@ -1,8 +1,9 @@
 {
     "models": [
+
         {
             "name": "qwen2:7b",
-            "parameter_size": "7b"
+            "parameter_size": "7.6B"
         }
     ]
 }

@@ -6,17 +6,19 @@ from typing import List, Dict, Any
 import ollama
 
 class OllamaChat:
-    def __init__(self, model_name: str, temperature: float):
+    def __init__(self, model_name: str, temperature: float, message_template: str = None):
         self.model_name = model_name
         self.temperature = temperature
+        self.message_template = message_template or 'return as json all the entities in the following string: {test_string}'
 
     def get_response(self, test_string: str) -> Dict[str, Any]:
+        message_content = self.message_template.format(test_string=test_string)
         response = ollama.chat(
             model=self.model_name,
             messages=[
                 {
                     'role': 'user',
-                    'content': 'return as json all the entities in the following string: ' + test_string,
+                    'content': message_content,
                 },
             ],
             format='json',
@@ -91,21 +93,21 @@ class ResultTable:
         print(self.table)
 
 
-def process_model(directory: str, model_name: str, parameter_size: str, test_string: Any, test_cases: List[str], result_table: ResultTable):
+def process_model(directory: str, model_name: str, parameter_size: str, test_string: Any, test_cases: List[str], result_table: ResultTable, message_template: str = None):
     if isinstance(test_string, list):
         results = []
         for string in test_string:
-            result = process_single_string(directory, model_name, parameter_size, string, test_cases, result_table)
+            result = process_single_string(directory, model_name, parameter_size, string, test_cases, result_table, message_template)
             results.append(result)
         ResultSaver.save_raw_response(directory, model_name, 1.0, json.dumps(results, indent=4))
     else:
-        process_single_string(directory, model_name, parameter_size, test_string, test_cases, result_table)
+        process_single_string(directory, model_name, parameter_size, test_string, test_cases, result_table, message_template)
 
-def process_single_string(directory: str, model_name: str, parameter_size: str, test_string: str, test_cases: List[str], result_table: ResultTable):
+def process_single_string(directory: str, model_name: str, parameter_size: str, test_string: str, test_cases: List[str], result_table: ResultTable, message_template: str = None):
     results = []
     for temperature in [0.0, 1.0]:
         start = time.time()
-        chat = OllamaChat(model_name=model_name, temperature=temperature)
+        chat = OllamaChat(model_name=model_name, temperature=temperature, message_template=message_template)
         response = chat.get_response(test_string)
         time_taken = time.time() - start
 
