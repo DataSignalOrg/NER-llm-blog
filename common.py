@@ -1,23 +1,24 @@
-import ollama
-import time
 import json
+import time
 import os
 from prettytable import PrettyTable
-from typing import List, Dict, Any, Optional
-
+from typing import List, Dict, Any
+import ollama
 
 class OllamaChat:
-    def __init__(self, model_name: str, temperature: float):
+    def __init__(self, model_name: str, temperature: float, message_template: str = None):
         self.model_name = model_name
         self.temperature = temperature
+        self.message_template = message_template or 'return as json all the entities in the following string: {test_string}'
 
     def get_response(self, test_string: str) -> Dict[str, Any]:
+        message_content = self.message_template.format(test_string=test_string)
         response = ollama.chat(
             model=self.model_name,
             messages=[
                 {
                     'role': 'user',
-                    'content': 'return as json all the entities in the following string: ' + test_string,
+                    'content': message_content,
                 },
             ],
             format='json',
@@ -32,7 +33,6 @@ class OllamaChat:
             return True
         except json.JSONDecodeError:
             return False
-
 
 class ResponseProcessor:
     @staticmethod
@@ -55,17 +55,16 @@ class ResponseProcessor:
 
         return entities
 
-
 class ResultSaver:
     @staticmethod
-    def save_raw_response(model_name: str, temperature: float, response_content: str):
-        os.makedirs('./results', exist_ok=True)
-        with open(f'./results/{model_name}_temp_{temperature}_raw.json', 'w') as f:
+    def save_raw_response(directory: str, model_name: str, temperature: float, response_content: str):
+        os.makedirs(directory, exist_ok=True)
+        with open(f'{directory}/{model_name}_temp_{temperature}_raw.json', 'w') as f:
             f.write(response_content)
 
     @staticmethod
-    def save_extracted_json(model_name: str, temperature: float, entities: List[Dict[str, Any]]):
-        with open(f'./results/{model_name}_temp_{temperature}.json', 'w') as f:
+    def save_extracted_json(directory: str, model_name: str, temperature: float, entities: List[Dict[str, Any]]):
+        with open(f'{directory}/{model_name}_temp_{temperature}.json', 'w') as f:
             json.dump(entities, f, indent=4)
 
 class ResultTable:
@@ -93,37 +92,32 @@ class ResultTable:
             self.table.add_row([result['model'], result['temperature'], result['time_taken'], result['entity_count'], result['test_case_count'], result['valid_json'], result['parameter_size']])
         print(self.table)
 
-# Main execution
-test_string = """
-Payments from Hodder and Stoughton UK, Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ, via United Agents, 12-26 Lexington St, London W1F 0LE: 12 July 2022, received \u00a3439.82 for royalties on book already written. Hours: no additional hours. (Registered 28 July 2022) 10 August 2022, received \u00a3519.69 for royalties on book already written. Hours: no additional hours. (Registered 23 August 2022) 5 October 2022, received \u00a31,771.82 for royalties on book already written. Hours: no additional hours. (Registered 27 October 2022) 14 March 2023, received \u00a3673.11 for royalties on book already written. Hours: no additional hours. (Registered 03 April 2023) 5 April 2023, received \u00a32,590.85 for royalties on book already written. Hours: no additional hours. (Registered 24 April 2023)",
-      "Payments from HarperCollins UK, 1 London Bridge St, London SE1 9GF, via Rogers, Coleridge and White Ltd, 20 Powis Mews, London W11 1JN: 30 April 2022, received \u00a3382.03 for royalties on books already written. Hours: no additional hours. (Registered 27 May 2022) 18 October 2022, received \u00a3171.03 for royalties on books already written. Hours: no additional hours. (Registered 27 October 2022) 6 January 2023, received \u00a3510,000 as an advance on an upcoming book yet to be published. Hours: approx. 10 hrs to date. (Registered 12 January 2023) <span class=\"highlight\">4 May 2023, received \u00a3402.81 for royalties on books already written. Hours: no additional hours. (Registered 16 May 2023)</span>
-"""
 
-test_cases = [
-  'Rogers, Coleridge and White Ltd',
-  'HarperCollins UK',
-  '27 May 2022',
-  'Hodder and Stoughton UK',
-  'EC4Y 0DZ',
-  '27 October 2022'
-]
+def process_model(directory: str, model_name: str, parameter_size: str, test_string: Any, test_cases: List[str], result_table: ResultTable, message_template: str = None):
+    if isinstance(test_string, list):
+        results = []
+        for string in test_string:
+            result = process_single_string(directory, model_name, parameter_size, string, test_cases, result_table, message_template)
+            results.append(result)
+        ResultSaver.save_raw_response(directory, model_name, 1.0, json.dumps(results, indent=4))
+    else:
+        process_single_string(directory, model_name, parameter_size, test_string, test_cases, result_table, message_template)
 
-result_table = ResultTable()
-
-def process_model(model_name: str, parameter_size: str):
+def process_single_string(directory: str, model_name: str, parameter_size: str, test_string: str, test_cases: List[str], result_table: ResultTable, message_template: str = None):
+    results = []
     for temperature in [0.0, 1.0]:
         start = time.time()
-        chat = OllamaChat(model_name=model_name, temperature=temperature)
+        chat = OllamaChat(model_name=model_name, temperature=temperature, message_template=message_template)
         response = chat.get_response(test_string)
         time_taken = time.time() - start
 
         response_content = response['message']['content']
         valid_json = OllamaChat.is_valid_json(response_content)
-        ResultSaver.save_raw_response(model_name=model_name, temperature=temperature, response_content=response_content)
+        ResultSaver.save_raw_response(directory, model_name, temperature, response_content)
 
         if valid_json:
             entities = ResponseProcessor.extract_json(response_content)
-            ResultSaver.save_extracted_json(model_name=model_name, temperature=temperature, entities=entities)
+            ResultSaver.save_extracted_json(directory, model_name, temperature, entities)
             entity_count = len(entities)
             test_case_count = sum(1 for test_case in test_cases if test_case in response_content)
         else:
@@ -131,17 +125,5 @@ def process_model(model_name: str, parameter_size: str):
             test_case_count = 0
 
         result_table.add_result(model=model_name, temperature=temperature, time_taken=time_taken, entity_count=entity_count, test_case_count=test_case_count, valid_json=valid_json, parameter_size=parameter_size)
-
-#
-# for model in ollama.list()['models']:
-# for model in ['qwen2:7b']:
-#     model_name = model['name']
-#
-#     parameter_size = model['details']['parameter_size']
-
-model_name = 'qwen2:7b'
-parameter_size = '7b'
-process_model(model_name, parameter_size )
-
-result_table.sort_results()
-result_table.display()
+        results.append(response_content)
+    return results

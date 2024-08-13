@@ -1,31 +1,144 @@
-```json
-[
-    {
-        "payer": "Hodder and Stoughton UK",
-        "address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ",
-        "agent": "United Agents",
-        "agent_address": "12-26 Lexington St, London W1F 0LE",
-        "date": ["12 July 2022", "10 August 2022", "5 October 2022", "14 March 2023", "5 April 2023"],
-        "amount": ["£439.82", "£519.69", "£1,771.82", "£673.11", "£2,590.85"],
-        "details": "royalties on book already written",
-        "hours": "no additional hours",
-        "registered_date": ["28 July 2022", "23 August 2022", "27 October 2022", "03 April 2023", "24 April 2023"]
-    },
-    {
-        "payer": "HarperCollins UK",
-        "address": "1 London Bridge St, London SE1 9GF",
-        "agent": "Rogers, Coleridge and White Ltd",
-        "agent_address": "20 Powis Mews, London W11 1JN",
-        "date": ["30 April 2022", "18 October 2022", "6 January 2023", "4 May 2023"],
-        "amount": ["£382.03", "£171.03", "£510,000", "£402.81"],
-        "details": [
-            "royalties on books already written",
-            "royalties on books already written",
-            "an advance on an upcoming book yet to be published",
-            "royalties on books already written"
-        ],
-        "hours": ["no additional hours", "approx. 10 hrs to date"],
-        "registered_date": ["27 May 2022", "27 October 2022", "12 January 2023", "16 May 2023"]
-    }
+{
+"entities": [
+{
+"type": "Organization",
+"name": "Hodder and Stoughton UK"
+},
+{
+"type": "Address",
+"address": "Carmelite House, 50 Victoria Embankment, London EC4Y 0DZ"
+},
+{
+"type": "Organization",
+"name": "United Agents"
+},
+{
+"type": "Address",
+"address": "12-26 Lexington St, London W1F 0LE"
+},
+{
+"type": "Date",
+"date": "12 July 2022"
+},
+{
+"type": "Amount",
+"amount": "£439.82"
+},
+{
+"type": "Date",
+"date": "28 July 2022"
+},
+{
+"type": "Date",
+"date": "10 August 2022"
+},
+{
+"type": "Amount",
+"amount": "£519.69"
+},
+{
+"type": "Date",
+"date": "23 August 2022"
+},
+{
+"type": "Date",
+"date": "5 October 2022"
+},
+{
+"type": "Amount",
+"amount": "£1,771.82"
+},
+{
+"type": "Date",
+"date": "27 October 2022"
+},
+{
+"type": "Date",
+"date": "14 March 2023"
+},
+{
+"type": "Amount",
+"amount": "£673.11"
+},
+{
+"type": "Date",
+"date": "03 April 2023"
+},
+{
+"type": "Date",
+"date": "5 April 2023"
+},
+{
+"type": "Amount",
+"amount": "£2,590.85"
+},
+{
+"type": "Date",
+"date": "24 April 2023"
+},
+{
+"type": "Organization",
+"name": "HarperCollins UK"
+},
+{
+"type": "Address",
+"address": "1 London Bridge St, London SE1 9GF"
+},
+{
+"type": "Organization",
+"name": "Rogers, Coleridge and White Ltd"
+},
+{
+"type": "Address",
+"address": "20 Powis Mews, London W11 1JN"
+},
+{
+"type": "Date",
+"date": "30 April 2022"
+},
+{
+"type": "Amount",
+"amount": "£382.03"
+},
+{
+"type": "Date",
+"date": "27 May 2022"
+},
+{
+"type": "Date",
+"date": "18 October 2022"
+},
+{
+"type": "Amount",
+"amount": "£171.03"
+},
+{
+"type": "Date",
+"date": "27 October 2022"
+},
+{
+"type": "Date",
+"date": "6 January 2023"
+},
+{
+"type": "Amount",
+"amount": "£510,000"
+},
+{
+"type": "Date",
+"date": "12 January 2023"
+},
+{
+"type": "Date",
+"date": "4 May 2023"
+},
+{
+"type": "Amount",
+"amount": "£402.81"
+},
+{
+"type": "Date",
+"date": "16 May 2023"
+}
 ]
-```
+}
