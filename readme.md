@@ -1,4 +1,4 @@
-# Ollama entity recognition benchmarks 
+# Ollama entity recognition benchmarks framework
 
 
 ### Purpose
